@@ -1,13 +1,13 @@
-const card = document.getElementsByClassName("card");
-const dropZone = document.getElementsByClassName("player-zone");
+const elements = document.querySelectorAll('.card');
+const drop = document.querySelector('.player-zone');
 
-card.addEventListener("dragstart", function (event) {
-  console.log(event);
+elements.forEach(function(element) {
+    element.addEventListener('mousedown', function(event) {
+        const hoveredElement = event.target;
+        hoveredElement.classList.add('player-zone');
+        hoveredElement.classList.add('card');
+        drop.appendChild(hoveredElement);
+        console.log(hoveredElement.alt);
+    });
 });
 
-dropZone.addEventListener("dragover", function (event) {
-  event.preventDefault();
-});
-dropZone.addEventListener("drop", function (event) {
-  dropZone.prepend(card);
-});
