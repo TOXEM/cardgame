@@ -11,7 +11,7 @@
 .card-stack {
   width: 160px;
   height: 250px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 0.5px;
   display: inline-block;
   vertical-align: top;
@@ -32,7 +32,7 @@
 .player-zone {
   width: 95vw;
   height: 28vh;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   position: absolute;
   left: 2.5vw;
   right: 2.5vw;
